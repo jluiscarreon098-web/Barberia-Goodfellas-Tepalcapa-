@@ -4,30 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbería Goodfellas</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-    img {
-      width: 200px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 26px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="logo.png" alt="Logo Barbería Goodfellas">
-  <h1>💈 Barbería Goodfellas 💈<br>API funcionando correctamente 🚀</h1>
+  <div class="container">
+    <img src="logo.svg" alt="Logo Barbería Goodfellas" class="logo">
+    <h1>💈 Barbería Goodfellas 💈</h1>
+    <p>Agenda de citas, clientes y productos</p>
+
+    <nav>
+      <button onclick="showTab('clientes')">Clientes</button>
+      <button onclick="showTab('barberos')">Barberos</button>
+      <button onclick="showTab('productos')">Productos</button>
+      <button onclick="showTab('citas')">Citas</button>
+    </nav>
+
+    <section id="content"></section>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
